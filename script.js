@@ -1,17 +1,23 @@
 let trees = document.getElementById("trees");
-let island = document.getElementById("island");
-let tree2 = document.getElementById("tree2");
-let balloons = document.getElementById("balloons");
-let lower = document.getElementById("lower");
-let lowerDark = document.getElementById("lowerDark");
-let next = document.getElementById("next");
+let backmountain = document.getElementById("backmountain");
+let mountains5 = document.getElementById("mountains5");
+let mountains4 = document.getElementById("mountains4");
+let mountains3 = document.getElementById("mountains3");
+let mountains2 = document.getElementById("mountains2");
+let frontmountain = document.getElementById("frontmountain");
+let person = document.getElementById("person");
+let front = document.getElementById("front");
 
 window.addEventListener("scroll", () => {
   let value = window.scrollY;
 
-  trees.style.top = value * 0.9 + "px";
-  island.style.top = value * 0.7 + "px";
-  balloons.style.left = value * 1 + "px";
-  tree2.style.top = value * 0.5 + "px";
-  lower.style.top = value * 0.5 + "px";
+  trees.style.top = value * 1.5 + "px";
+  backmountain.style.top = value * 0.8 + "px";
+  mountains4.style.top = value * 0.6 + "px";
+  mountains5.style.top = value * 0.4 + "px";
+  mountains3.style.top = value * 0.6 + "px";
+  mountains2.style.top = value * 0.7 + "px";
+  frontmountain.style.top = value * 0.6 + "px";
+  person.style.top = value * 0.4 + "px";
+  front.style.top = value * 0.4 + "px";
 });

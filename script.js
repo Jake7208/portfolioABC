@@ -13,5 +13,5 @@ window.addEventListener("scroll", () => {
   island.style.top = value * 0.7 + "px";
   balloons.style.left = value * 1 + "px";
   tree2.style.top = value * 0.5 + "px";
-  lower.style.top = value * 0.7 + "px";
+  lower.style.top = value * 0.5 + "px";
 });

@@ -1,23 +1,12 @@
-let trees = document.getElementById("trees");
-let backmountain = document.getElementById("backmountain");
-let mountains5 = document.getElementById("mountains5");
-let mountains4 = document.getElementById("mountains4");
-let mountains3 = document.getElementById("mountains3");
-let mountains2 = document.getElementById("mountains2");
-let frontmountain = document.getElementById("frontmountain");
-let person = document.getElementById("person");
-let front = document.getElementById("front");
+gsap.registerPlugin(ScrollTrigger);
 
-window.addEventListener("scroll", () => {
-  let value = window.scrollY;
+gsap.to(".square", {
+  x: 700,
+  duration: 3,
 
-  trees.style.top = value * 1.5 + "px";
-  backmountain.style.top = value * 0.8 + "px";
-  mountains4.style.top = value * 0.6 + "px";
-  mountains5.style.top = value * 0.4 + "px";
-  mountains3.style.top = value * 0.6 + "px";
-  mountains2.style.top = value * 0.7 + "px";
-  frontmountain.style.top = value * 0.6 + "px";
-  person.style.top = value * 0.4 + "px";
-  front.style.top = value * 0.4 + "px";
+  scrollTrigger: {
+    trigger: ".square",
+    start: "top 30%",
+    markers: { startColor: "green", endColor: "red", fontSize: "12px" },
+  },
 });
